@@ -14,9 +14,8 @@ enum Constants {
     }
 
     enum Authentication {
-        // TODO: - Add your own key and secret
-        static let consumerKey = ""
-        static let consumerSecret = ""
+        static let consumerKey = "HbQjkVvpwpoOqO0ApJooW4axf"
+        static let consumerSecret = "XHQhutsiGPpuvEwALo2ja5JApbwfjiRaUSlopUbPwBDFm5obQv"
         static let callbackUrl = "tweetr://"
     }
 
