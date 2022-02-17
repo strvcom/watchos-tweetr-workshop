@@ -5,6 +5,9 @@
 //  Created by Nick Beresnev on 10/26/21.
 //
 
+// WIFI Name: STRV-Guest
+// WIFI PW: strvhere
+
 import SwiftUI
 
 struct ContentView: View {
@@ -12,7 +15,20 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            switch authorizationStore.state {
+            case .authorized:
+                Text("Authorized")
+            case .unauthorized:
+                LoggedOutView()
+            case .inProgress:
+                ProgressView()
+            case .failed:
+                Text("Failure")
+            }
+        }
+        .onAppear {
+            authorizationStore.logout()
+            authorizationStore.checkAuthorization()
         }
         .environmentObject(authorizationStore)
     }

@@ -7,7 +7,9 @@
 
 import Foundation
 
-final class APIManager {
+final class APIManager: APIManaging {
+    @Injected var keychainManager: KeychainManaging
+    
     private lazy var urlSession: URLSession = {
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 30
@@ -25,6 +27,28 @@ final class APIManager {
         return decoder
     }()
 
-    // TODO: Implement request function
-    func request(_: Router) {}
+    func request(_ endpoint: Router) async throws -> Data {
+        var request = try endpoint.asRequest()
+        
+        let token = keychainManager.get(key: Constants.Keychain.authToken)
+        let tokenSecret = keychainManager.get(key: Constants.Keychain.authTokenSecret)
+        
+        if
+            let authorizableRequest = request as? AccessTokenAuthorizable,
+            let header = try authorizableRequest.getAuthenticationHeader(token: token, tokenSecret: tokenSecret)
+        {
+            request.setValue(header, forHTTPHeaderField: "Authorization")
+        }
+        
+        let (data, _) = try await urlSession.data(for: request)
+        
+        return data
+    }
+    
+    func request<T>(_ endpoint: Router) async throws -> T where T: Decodable {
+        let data = try await request(endpoint)
+        let object = try decoder.decode(T.self, from: data)
+        
+        return object
+    }
 }

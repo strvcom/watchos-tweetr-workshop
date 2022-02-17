@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54178B3127BEC7490050AAE5 /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54178B3027BEC7490050AAE5 /* LoggedOutView.swift */; };
 		542E5D292742B93D00BC75E7 /* AccessTokenAuthorizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E5D282742B93D00BC75E7 /* AccessTokenAuthorizable.swift */; };
 		542E5D2B2742B98600BC75E7 /* AuthorizationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E5D2A2742B98600BC75E7 /* AuthorizationType.swift */; };
 		5430F36C2735549200C20449 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430F36B2735549200C20449 /* Constants.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		54178B3027BEC7490050AAE5 /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
 		542E5D282742B93D00BC75E7 /* AccessTokenAuthorizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenAuthorizable.swift; sourceTree = "<group>"; };
 		542E5D2A2742B98600BC75E7 /* AuthorizationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationType.swift; sourceTree = "<group>"; };
 		5430F36B2735549200C20449 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 		54EB2FBE273D2991006E8B84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				54178B3027BEC7490050AAE5 /* LoggedOutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				54F429652729791A00A09C4F /* Router.swift in Sources */,
 				54F4295F2729639C00A09C4F /* APIManaging.swift in Sources */,
 				54AD718327283D9B006B8CA8 /* AuthorizationStore.swift in Sources */,
+				54178B3127BEC7490050AAE5 /* LoggedOutView.swift in Sources */,
 				542E5D2B2742B98600BC75E7 /* AuthorizationType.swift in Sources */,
 				5430F36C2735549200C20449 /* Constants.swift in Sources */,
 				54F429592729633500A09C4F /* DIContainer.swift in Sources */,
