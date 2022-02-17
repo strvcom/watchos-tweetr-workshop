@@ -328,11 +328,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AD7179272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch WatchKit App" */;
 			buildPhases = (
-				54A06C702742AE3500F0D0F1 /* SwiftFormat */,
 				54AD7155272836C7006B8CA8 /* Resources */,
 				54AD7178272836CB006B8CA8 /* Embed App Extensions */,
 				4A3C27AB3F5CB5EC34A01260 /* Frameworks */,
-				54A06C6F2742AE1600F0D0F1 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -430,45 +428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		54A06C6F2742AE1600F0D0F1 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ `uname -m` == 'arm64' ] && [ -d /opt/homebrew/bin/ ]; then\n  export PATH=/opt/homebrew/bin:$PATH\nfi\n\nmint run swiftlint\n";
-		};
-		54A06C702742AE3500F0D0F1 /* SwiftFormat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftFormat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ `uname -m` == 'arm64' ] && [ -d /opt/homebrew/bin/ ]; then\n  export PATH=/opt/homebrew/bin:$PATH\nfi\n\nmint run swiftformat .\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54AD715E272836CA006B8CA8 /* Sources */ = {
