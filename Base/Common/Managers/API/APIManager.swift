@@ -34,7 +34,7 @@ final class APIManager: APIManaging {
         let tokenSecret = keychainManager.get(key: Constants.Keychain.authTokenSecret)
         
         if
-            let authorizableRequest = request as? AccessTokenAuthorizable,
+            let authorizableRequest = endpoint as? AccessTokenAuthorizable,
             let header = try authorizableRequest.getAuthenticationHeader(token: token, tokenSecret: tokenSecret)
         {
             request.setValue(header, forHTTPHeaderField: "Authorization")

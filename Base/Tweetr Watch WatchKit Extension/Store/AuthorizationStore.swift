@@ -41,7 +41,7 @@ final class AuthorizationStore: NSObject, ObservableObject {
             keychainManager.set(key: Constants.Keychain.authTokenSecret, value: accessToken.oauthTokenSecret)
             
             state = .authorized
-        } catch {
+        } catch let error {
             print("V60: ", error)
             state = .failed
         }
@@ -88,6 +88,7 @@ private extension AuthorizationStore {
         ) { callbackUrl, error in
             guard
                 error == nil,
+                let url = callbackUrl,
                 let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false),
                 let oauthToken = urlComponents.queryItems?.first(where: { $0.name == "oauth_token" })?.value,
                 let oauthVerifier = urlComponents.queryItems?.first(where: { $0.name == "oauth_verifier"})?.value
