@@ -27,7 +27,6 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            authorizationStore.logout()
             authorizationStore.checkAuthorization()
         }
         .environmentObject(authorizationStore)

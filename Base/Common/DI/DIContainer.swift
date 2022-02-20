@@ -56,5 +56,9 @@ extension DIContainer {
         register(KeychainManaging.self) {
             KeychainManager()
         }
+        
+        register(TwitterServicing.self) {
+            TwitterService()
+        }
     }
 }

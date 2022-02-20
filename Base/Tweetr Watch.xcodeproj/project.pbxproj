@@ -14,6 +14,15 @@
 		5430F37127355D1800C20449 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430F37027355D1800C20449 /* String+Convenience.swift */; };
 		5451B0C927B96A280079331E /* RequestAuthTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B0C827B96A280079331E /* RequestAuthTokenResponse.swift */; };
 		5451B0CB27B96A3B0079331E /* RequestTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451B0CA27B96A3B0079331E /* RequestTokenResponse.swift */; };
+		54A672B327C2211F005D803F /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672AC27C2211F005D803F /* Tweet.swift */; };
+		54A672B427C2211F005D803F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672AD27C2211F005D803F /* User.swift */; };
+		54A672B527C2211F005D803F /* ExtendendEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672AE27C2211F005D803F /* ExtendendEntities.swift */; };
+		54A672B627C2211F005D803F /* VideoVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672AF27C2211F005D803F /* VideoVariant.swift */; };
+		54A672B727C2211F005D803F /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672B027C2211F005D803F /* MediaType.swift */; };
+		54A672B827C2211F005D803F /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672B127C2211F005D803F /* Media.swift */; };
+		54A672B927C2211F005D803F /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672B227C2211F005D803F /* VideoInfo.swift */; };
+		54A672BB27C22149005D803F /* TwitterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672BA27C22149005D803F /* TwitterRouter.swift */; };
+		54A672BE27C22172005D803F /* TwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A672BD27C22172005D803F /* TwitterService.swift */; };
 		54AD7158272836C7006B8CA8 /* Tweetr Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 54AD7157272836C7006B8CA8 /* Tweetr Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		54AD715D272836C9006B8CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AD715C272836C9006B8CA8 /* Assets.xcassets */; };
 		54AD7163272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54AD7162272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -84,6 +93,15 @@
 		5430F37027355D1800C20449 /* String+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
 		5451B0C827B96A280079331E /* RequestAuthTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAuthTokenResponse.swift; sourceTree = "<group>"; };
 		5451B0CA27B96A3B0079331E /* RequestTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenResponse.swift; sourceTree = "<group>"; };
+		54A672AC27C2211F005D803F /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		54A672AD27C2211F005D803F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		54A672AE27C2211F005D803F /* ExtendendEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendendEntities.swift; sourceTree = "<group>"; };
+		54A672AF27C2211F005D803F /* VideoVariant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVariant.swift; sourceTree = "<group>"; };
+		54A672B027C2211F005D803F /* MediaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		54A672B127C2211F005D803F /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		54A672B227C2211F005D803F /* VideoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
+		54A672BA27C22149005D803F /* TwitterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRouter.swift; sourceTree = "<group>"; };
+		54A672BD27C22172005D803F /* TwitterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterService.swift; sourceTree = "<group>"; };
 		54AD7153272836C7006B8CA8 /* Tweetr Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tweetr Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AD7157272836C7006B8CA8 /* Tweetr Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tweetr Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AD715C272836C9006B8CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,10 +178,25 @@
 		5451B0C727B96A1B0079331E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				54A672AE27C2211F005D803F /* ExtendendEntities.swift */,
+				54A672B127C2211F005D803F /* Media.swift */,
+				54A672B027C2211F005D803F /* MediaType.swift */,
+				54A672AC27C2211F005D803F /* Tweet.swift */,
+				54A672AD27C2211F005D803F /* User.swift */,
+				54A672B227C2211F005D803F /* VideoInfo.swift */,
+				54A672AF27C2211F005D803F /* VideoVariant.swift */,
 				5451B0C827B96A280079331E /* RequestAuthTokenResponse.swift */,
 				5451B0CA27B96A3B0079331E /* RequestTokenResponse.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		54A672BC27C22167005D803F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				54A672BD27C22172005D803F /* TwitterService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		54AD714C272836C7006B8CA8 = {
@@ -245,6 +278,7 @@
 		54F42956272962F200A09C4F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				54A672BC27C22167005D803F /* Services */,
 				5451B0C627B96A0D0079331E /* Models */,
 				5430F36F27355D0900C20449 /* Extensions */,
 				5430F36A2735548400C20449 /* Constants */,
@@ -299,6 +333,7 @@
 		54F42972272ADB5D00A09C4F /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				54A672BA27C22149005D803F /* TwitterRouter.swift */,
 				54F42973272ADB6B00A09C4F /* AuthorizationRouter.swift */,
 			);
 			path = Routers;
@@ -439,13 +474,20 @@
 			files = (
 				5451B0CB27B96A3B0079331E /* RequestTokenResponse.swift in Sources */,
 				54F42961272963BD00A09C4F /* APIManager.swift in Sources */,
+				54A672BE27C22172005D803F /* TwitterService.swift in Sources */,
 				54AD716A272836CA006B8CA8 /* TweetrWatchApp.swift in Sources */,
+				54A672B327C2211F005D803F /* Tweet.swift in Sources */,
 				54F42974272ADB6B00A09C4F /* AuthorizationRouter.swift in Sources */,
 				54F429652729791A00A09C4F /* Router.swift in Sources */,
+				54A672BB27C22149005D803F /* TwitterRouter.swift in Sources */,
 				54F4295F2729639C00A09C4F /* APIManaging.swift in Sources */,
 				54AD718327283D9B006B8CA8 /* AuthorizationStore.swift in Sources */,
 				54178B3127BEC7490050AAE5 /* LoggedOutView.swift in Sources */,
+				54A672B627C2211F005D803F /* VideoVariant.swift in Sources */,
+				54A672B827C2211F005D803F /* Media.swift in Sources */,
+				54A672B727C2211F005D803F /* MediaType.swift in Sources */,
 				542E5D2B2742B98600BC75E7 /* AuthorizationType.swift in Sources */,
+				54A672B427C2211F005D803F /* User.swift in Sources */,
 				5430F36C2735549200C20449 /* Constants.swift in Sources */,
 				54F429592729633500A09C4F /* DIContainer.swift in Sources */,
 				54AD7168272836CA006B8CA8 /* ContentView.swift in Sources */,
@@ -453,8 +495,10 @@
 				54EB2FB2273A98AD006E8B84 /* KeychainManager.swift in Sources */,
 				5451B0C927B96A280079331E /* RequestAuthTokenResponse.swift in Sources */,
 				5430F37127355D1800C20449 /* String+Convenience.swift in Sources */,
+				54A672B927C2211F005D803F /* VideoInfo.swift in Sources */,
 				54F4295B2729634100A09C4F /* Injected.swift in Sources */,
 				54F429712729B00700A09C4F /* HTTPHeader.swift in Sources */,
+				54A672B527C2211F005D803F /* ExtendendEntities.swift in Sources */,
 				542E5D292742B93D00BC75E7 /* AccessTokenAuthorizable.swift in Sources */,
 				54F429632729641700A09C4F /* APIError.swift in Sources */,
 			);
