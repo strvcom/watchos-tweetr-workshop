@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5417C9C6279F248B006518B5 /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C9C5279F248B006518B5 /* FailureView.swift */; };
+		542E5D272742B61100BC75E7 /* TimelineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E5D262742B61100BC75E7 /* TimelineStore.swift */; };
+		542E5D292742B93D00BC75E7 /* AccessTokenAuthorizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E5D282742B93D00BC75E7 /* AccessTokenAuthorizable.swift */; };
+		542E5D2B2742B98600BC75E7 /* AuthorizationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E5D2A2742B98600BC75E7 /* AuthorizationType.swift */; };
+		5430F36C2735549200C20449 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430F36B2735549200C20449 /* Constants.swift */; };
+		5430F37127355D1800C20449 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430F37027355D1800C20449 /* String+Convenience.swift */; };
+		5444F0A82747F99B00388035 /* TweetDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5444F0A72747F99B00388035 /* TweetDetailStore.swift */; };
+		548C8C1D274BA147000C4978 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C8C1C274BA147000C4978 /* User.swift */; };
+		548C8C1F274BA16D000C4978 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C8C1E274BA16D000C4978 /* Media.swift */; };
+		548C8C21274BD0EB000C4978 /* ExtendendEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C8C20274BD0EA000C4978 /* ExtendendEntities.swift */; };
+		549CC144279425CB004CF624 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CC143279425CB004CF624 /* VideoInfo.swift */; };
+		549CC146279425DE004CF624 /* VideoVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CC145279425DE004CF624 /* VideoVariant.swift */; };
+		549CC148279425F9004CF624 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CC147279425F9004CF624 /* MediaType.swift */; };
+		54A8D0FD2746569B00CB3D65 /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8D0FC2746569B00CB3D65 /* LoggedOutView.swift */; };
+		54AD7158272836C7006B8CA8 /* Tweetr Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 54AD7157272836C7006B8CA8 /* Tweetr Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54AD715D272836C9006B8CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AD715C272836C9006B8CA8 /* Assets.xcassets */; };
+		54AD7163272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54AD7162272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54AD7168272836CA006B8CA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD7167272836CA006B8CA8 /* ContentView.swift */; };
+		54AD716A272836CA006B8CA8 /* TweetrWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD7169272836CA006B8CA8 /* TweetrWatchApp.swift */; };
+		54AD716C272836CA006B8CA8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD716B272836CA006B8CA8 /* ComplicationController.swift */; };
+		54AD716E272836CB006B8CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AD716D272836CB006B8CA8 /* Assets.xcassets */; };
+		54AD7171272836CB006B8CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AD7170272836CB006B8CA8 /* Preview Assets.xcassets */; };
+		54AD718327283D9B006B8CA8 /* AuthorizationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD718227283D9B006B8CA8 /* AuthorizationStore.swift */; };
+		54B2200A274FD16100AF521E /* TweetMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B22009274FD16100AF521E /* TweetMediaView.swift */; };
+		54BEC3B0275651B400256AB5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BEC3AF275651B400256AB5 /* UserView.swift */; };
+		54BEC3B22756522900256AB5 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BEC3B12756522900256AB5 /* ProfileStore.swift */; };
+		54D4492727C8E165005D43D4 /* ExpandedTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4492627C8E165005D43D4 /* ExpandedTweetView.swift */; };
+		54EB2FB2273A98AD006E8B84 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FB1273A98AD006E8B84 /* KeychainManager.swift */; };
+		54EB2FB6273AACDF006E8B84 /* RequestAuthTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FB5273AACDF006E8B84 /* RequestAuthTokenResponse.swift */; };
+		54EB2FB8273BEC1E006E8B84 /* TwitterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FB7273BEC1E006E8B84 /* TwitterRouter.swift */; };
+		54EB2FBB273D241B006E8B84 /* TwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FBA273D241B006E8B84 /* TwitterService.swift */; };
+		54EB2FBD273D2584006E8B84 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FBC273D2584006E8B84 /* Tweet.swift */; };
+		54EB2FC0273D29A0006E8B84 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FBF273D29A0006E8B84 /* TimelineView.swift */; };
+		54EB2FC2273D29B2006E8B84 /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FC1273D29B2006E8B84 /* TweetView.swift */; };
+		54EB2FC4273D45A6006E8B84 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FC3273D45A6006E8B84 /* ProfileView.swift */; };
+		54EB2FC8273D467D006E8B84 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB2FC7273D467D006E8B84 /* LoggedInView.swift */; };
+		54F1B9C72743D7FB002AD2FA /* TweetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1B9C62743D7FB002AD2FA /* TweetDetailView.swift */; };
+		54F1B9C92743E60C002AD2FA /* RequestTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1B9C82743E60C002AD2FA /* RequestTokenResponse.swift */; };
+		54F429592729633500A09C4F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F429582729633500A09C4F /* DIContainer.swift */; };
+		54F4295B2729634100A09C4F /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F4295A2729634100A09C4F /* Injected.swift */; };
+		54F4295F2729639C00A09C4F /* APIManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F4295E2729639C00A09C4F /* APIManaging.swift */; };
+		54F42961272963BD00A09C4F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F42960272963BD00A09C4F /* APIManager.swift */; };
+		54F429632729641700A09C4F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F429622729641700A09C4F /* APIError.swift */; };
+		54F429652729791A00A09C4F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F429642729791900A09C4F /* Router.swift */; };
+		54F4296B2729AAFF00A09C4F /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F4296A2729AAFF00A09C4F /* HTTPStatusCode.swift */; };
+		54F4296D2729ABA500A09C4F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F4296C2729ABA500A09C4F /* HTTPMethod.swift */; };
+		54F429712729B00700A09C4F /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F429702729B00700A09C4F /* HTTPHeader.swift */; };
+		54F42974272ADB6B00A09C4F /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F42973272ADB6B00A09C4F /* AuthorizationRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54AD7159272836C7006B8CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AD714D272836C7006B8CA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AD7156272836C7006B8CA8;
+			remoteInfo = "Tweetr Watch WatchKit App";
+		};
+		54AD7164272836CA006B8CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AD714D272836C7006B8CA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AD7161272836CA006B8CA8;
+			remoteInfo = "Tweetr Watch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54AD7178272836CB006B8CA8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54AD7163272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AD717C272836CB006B8CA8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				54AD7158272836C7006B8CA8 /* Tweetr Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5417C9C5279F248B006518B5 /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
+		542E5D262742B61100BC75E7 /* TimelineStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStore.swift; sourceTree = "<group>"; };
+		542E5D282742B93D00BC75E7 /* AccessTokenAuthorizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenAuthorizable.swift; sourceTree = "<group>"; };
+		542E5D2A2742B98600BC75E7 /* AuthorizationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationType.swift; sourceTree = "<group>"; };
+		5430F36B2735549200C20449 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5430F37027355D1800C20449 /* String+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
+		5444F0A72747F99B00388035 /* TweetDetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailStore.swift; sourceTree = "<group>"; };
+		548C8C1C274BA147000C4978 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		548C8C1E274BA16D000C4978 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		548C8C20274BD0EA000C4978 /* ExtendendEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendendEntities.swift; sourceTree = "<group>"; };
+		549CC143279425CB004CF624 /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
+		549CC145279425DE004CF624 /* VideoVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVariant.swift; sourceTree = "<group>"; };
+		549CC147279425F9004CF624 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		54A8D0FC2746569B00CB3D65 /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
+		54AD7153272836C7006B8CA8 /* Tweetr Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tweetr Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AD7157272836C7006B8CA8 /* Tweetr Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tweetr Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AD715C272836C9006B8CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54AD7162272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tweetr Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AD7167272836CA006B8CA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54AD7169272836CA006B8CA8 /* TweetrWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetrWatchApp.swift; sourceTree = "<group>"; };
+		54AD716B272836CA006B8CA8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		54AD716D272836CB006B8CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54AD7170272836CB006B8CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54AD7172272836CB006B8CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AD7180272836DE006B8CA8 /* Tweetr Watch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tweetr Watch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		54AD718227283D9B006B8CA8 /* AuthorizationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStore.swift; sourceTree = "<group>"; };
+		54B22009274FD16100AF521E /* TweetMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetMediaView.swift; sourceTree = "<group>"; };
+		54BEC3AF275651B400256AB5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		54BEC3B12756522900256AB5 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		54D4492627C8E165005D43D4 /* ExpandedTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedTweetView.swift; sourceTree = "<group>"; };
+		54DD12CB27353CA1008E3CDF /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		54EB2FB1273A98AD006E8B84 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		54EB2FB5273AACDF006E8B84 /* RequestAuthTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAuthTokenResponse.swift; sourceTree = "<group>"; };
+		54EB2FB7273BEC1E006E8B84 /* TwitterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterRouter.swift; sourceTree = "<group>"; };
+		54EB2FBA273D241B006E8B84 /* TwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterService.swift; sourceTree = "<group>"; };
+		54EB2FBC273D2584006E8B84 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		54EB2FBF273D29A0006E8B84 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		54EB2FC1273D29B2006E8B84 /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		54EB2FC3273D45A6006E8B84 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		54EB2FC7273D467D006E8B84 /* LoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
+		54F1B9C62743D7FB002AD2FA /* TweetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailView.swift; sourceTree = "<group>"; };
+		54F1B9C82743E60C002AD2FA /* RequestTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenResponse.swift; sourceTree = "<group>"; };
+		54F429582729633500A09C4F /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		54F4295A2729634100A09C4F /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		54F4295E2729639C00A09C4F /* APIManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManaging.swift; sourceTree = "<group>"; };
+		54F42960272963BD00A09C4F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		54F429622729641700A09C4F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		54F429642729791900A09C4F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		54F4296A2729AAFF00A09C4F /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		54F4296C2729ABA500A09C4F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		54F429702729B00700A09C4F /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		54F42973272ADB6B00A09C4F /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FEBF844A203B00A5B726482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A3C27AB3F5CB5EC34A01260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AD715F272836CA006B8CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5430F36A2735548400C20449 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5430F36B2735549200C20449 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5430F36F27355D0900C20449 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5430F37027355D1800C20449 /* String+Convenience.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		54AD714C272836C7006B8CA8 = {
+			isa = PBXGroup;
+			children = (
+				54F42956272962F200A09C4F /* Common */,
+				54AD715B272836C7006B8CA8 /* Tweetr Watch WatchKit App */,
+				54AD7166272836CA006B8CA8 /* Tweetr Watch WatchKit Extension */,
+				54DD12CA27353CA1008E3CDF /* Frameworks */,
+				54AD7154272836C7006B8CA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54AD7154272836C7006B8CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54AD7153272836C7006B8CA8 /* Tweetr Watch.app */,
+				54AD7157272836C7006B8CA8 /* Tweetr Watch WatchKit App.app */,
+				54AD7162272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54AD715B272836C7006B8CA8 /* Tweetr Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				54AD715C272836C9006B8CA8 /* Assets.xcassets */,
+			);
+			path = "Tweetr Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		54AD7166272836CA006B8CA8 /* Tweetr Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54EB2FBE273D2991006E8B84 /* Views */,
+				54AD718127283D84006B8CA8 /* Store */,
+				54AD7180272836DE006B8CA8 /* Tweetr Watch WatchKit Extension.entitlements */,
+				54AD7167272836CA006B8CA8 /* ContentView.swift */,
+				54AD7169272836CA006B8CA8 /* TweetrWatchApp.swift */,
+				54AD716B272836CA006B8CA8 /* ComplicationController.swift */,
+				54AD716D272836CB006B8CA8 /* Assets.xcassets */,
+				54AD7172272836CB006B8CA8 /* Info.plist */,
+				54AD716F272836CB006B8CA8 /* Preview Content */,
+			);
+			path = "Tweetr Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		54AD716F272836CB006B8CA8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				54AD7170272836CB006B8CA8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54AD718127283D84006B8CA8 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				54AD718227283D9B006B8CA8 /* AuthorizationStore.swift */,
+				542E5D262742B61100BC75E7 /* TimelineStore.swift */,
+				5444F0A72747F99B00388035 /* TweetDetailStore.swift */,
+				54BEC3B12756522900256AB5 /* ProfileStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		54DD12CA27353CA1008E3CDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54DD12CB27353CA1008E3CDF /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54EB2FB3273AACBD006E8B84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54EB2FB4273AACC3006E8B84 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54EB2FB4273AACC3006E8B84 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				54EB2FB5273AACDF006E8B84 /* RequestAuthTokenResponse.swift */,
+				54F1B9C82743E60C002AD2FA /* RequestTokenResponse.swift */,
+				54EB2FBC273D2584006E8B84 /* Tweet.swift */,
+				548C8C1C274BA147000C4978 /* User.swift */,
+				548C8C1E274BA16D000C4978 /* Media.swift */,
+				548C8C20274BD0EA000C4978 /* ExtendendEntities.swift */,
+				549CC143279425CB004CF624 /* VideoInfo.swift */,
+				549CC145279425DE004CF624 /* VideoVariant.swift */,
+				549CC147279425F9004CF624 /* MediaType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		54EB2FB9273D2404006E8B84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				54EB2FBA273D241B006E8B84 /* TwitterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		54EB2FBE273D2991006E8B84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54EB2FBF273D29A0006E8B84 /* TimelineView.swift */,
+				54EB2FC1273D29B2006E8B84 /* TweetView.swift */,
+				54EB2FC3273D45A6006E8B84 /* ProfileView.swift */,
+				54EB2FC7273D467D006E8B84 /* LoggedInView.swift */,
+				54F1B9C62743D7FB002AD2FA /* TweetDetailView.swift */,
+				54A8D0FC2746569B00CB3D65 /* LoggedOutView.swift */,
+				54B22009274FD16100AF521E /* TweetMediaView.swift */,
+				54BEC3AF275651B400256AB5 /* UserView.swift */,
+				5417C9C5279F248B006518B5 /* FailureView.swift */,
+				54D4492627C8E165005D43D4 /* ExpandedTweetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54F42956272962F200A09C4F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				54EB2FB9273D2404006E8B84 /* Services */,
+				54EB2FB3273AACBD006E8B84 /* Models */,
+				5430F36F27355D0900C20449 /* Extensions */,
+				5430F36A2735548400C20449 /* Constants */,
+				54F42972272ADB5D00A09C4F /* Routers */,
+				54F4295C2729636400A09C4F /* Managers */,
+				54F429572729630E00A09C4F /* DI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		54F429572729630E00A09C4F /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				54F429582729633500A09C4F /* DIContainer.swift */,
+				54F4295A2729634100A09C4F /* Injected.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		54F4295C2729636400A09C4F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				54F4295D2729638900A09C4F /* API */,
+				54EB2FB1273A98AD006E8B84 /* KeychainManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		54F4295D2729638900A09C4F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				54F429692729AAEE00A09C4F /* Misc */,
+				54F4295E2729639C00A09C4F /* APIManaging.swift */,
+				54F42960272963BD00A09C4F /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		54F429692729AAEE00A09C4F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				54F4296A2729AAFF00A09C4F /* HTTPStatusCode.swift */,
+				54F429622729641700A09C4F /* APIError.swift */,
+				54F4296C2729ABA500A09C4F /* HTTPMethod.swift */,
+				54F429702729B00700A09C4F /* HTTPHeader.swift */,
+				54F429642729791900A09C4F /* Router.swift */,
+				542E5D282742B93D00BC75E7 /* AccessTokenAuthorizable.swift */,
+				542E5D2A2742B98600BC75E7 /* AuthorizationType.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		54F42972272ADB5D00A09C4F /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				54F42973272ADB6B00A09C4F /* AuthorizationRouter.swift */,
+				54EB2FB7273BEC1E006E8B84 /* TwitterRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54AD7152272836C7006B8CA8 /* Tweetr Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AD717D272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch" */;
+			buildPhases = (
+				54AD7151272836C7006B8CA8 /* Resources */,
+				54AD717C272836CB006B8CA8 /* Embed Watch Content */,
+				3FEBF844A203B00A5B726482 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AD715A272836C7006B8CA8 /* PBXTargetDependency */,
+			);
+			name = "Tweetr Watch";
+			packageProductDependencies = (
+			);
+			productName = "Tweetr Watch";
+			productReference = 54AD7153272836C7006B8CA8 /* Tweetr Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		54AD7156272836C7006B8CA8 /* Tweetr Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AD7179272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch WatchKit App" */;
+			buildPhases = (
+				54A06C702742AE3500F0D0F1 /* SwiftFormat */,
+				54AD7155272836C7006B8CA8 /* Resources */,
+				54AD7178272836CB006B8CA8 /* Embed App Extensions */,
+				4A3C27AB3F5CB5EC34A01260 /* Frameworks */,
+				54A06C6F2742AE1600F0D0F1 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AD7165272836CA006B8CA8 /* PBXTargetDependency */,
+			);
+			name = "Tweetr Watch WatchKit App";
+			productName = "Tweetr Watch WatchKit App";
+			productReference = 54AD7157272836C7006B8CA8 /* Tweetr Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		54AD7161272836CA006B8CA8 /* Tweetr Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AD7175272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch WatchKit Extension" */;
+			buildPhases = (
+				54AD715E272836CA006B8CA8 /* Sources */,
+				54AD715F272836CA006B8CA8 /* Frameworks */,
+				54AD7160272836CA006B8CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tweetr Watch WatchKit Extension";
+			productName = "Tweetr Watch WatchKit Extension";
+			productReference = 54AD7162272836CA006B8CA8 /* Tweetr Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54AD714D272836C7006B8CA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					54AD7152272836C7006B8CA8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					54AD7156272836C7006B8CA8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					54AD7161272836CA006B8CA8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 54AD7150272836C7006B8CA8 /* Build configuration list for PBXProject "Tweetr Watch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54AD714C272836C7006B8CA8;
+			packageReferences = (
+			);
+			productRefGroup = 54AD7154272836C7006B8CA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54AD7152272836C7006B8CA8 /* Tweetr Watch */,
+				54AD7156272836C7006B8CA8 /* Tweetr Watch WatchKit App */,
+				54AD7161272836CA006B8CA8 /* Tweetr Watch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54AD7151272836C7006B8CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AD7155272836C7006B8CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AD715D272836C9006B8CA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AD7160272836CA006B8CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AD7171272836CB006B8CA8 /* Preview Assets.xcassets in Resources */,
+				54AD716E272836CB006B8CA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54A06C6F2742AE1600F0D0F1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ `uname -m` == 'arm64' ] && [ -d /opt/homebrew/bin/ ]; then\n  export PATH=/opt/homebrew/bin:$PATH\nfi\n\nmint run swiftlint\n";
+		};
+		54A06C702742AE3500F0D0F1 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ `uname -m` == 'arm64' ] && [ -d /opt/homebrew/bin/ ]; then\n  export PATH=/opt/homebrew/bin:$PATH\nfi\n\nmint run swiftformat .\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54AD715E272836CA006B8CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F42961272963BD00A09C4F /* APIManager.swift in Sources */,
+				549CC146279425DE004CF624 /* VideoVariant.swift in Sources */,
+				54AD716A272836CA006B8CA8 /* TweetrWatchApp.swift in Sources */,
+				54F42974272ADB6B00A09C4F /* AuthorizationRouter.swift in Sources */,
+				54EB2FBD273D2584006E8B84 /* Tweet.swift in Sources */,
+				54F1B9C92743E60C002AD2FA /* RequestTokenResponse.swift in Sources */,
+				54F429652729791A00A09C4F /* Router.swift in Sources */,
+				54EB2FC0273D29A0006E8B84 /* TimelineView.swift in Sources */,
+				542E5D272742B61100BC75E7 /* TimelineStore.swift in Sources */,
+				54F4295F2729639C00A09C4F /* APIManaging.swift in Sources */,
+				54AD718327283D9B006B8CA8 /* AuthorizationStore.swift in Sources */,
+				542E5D2B2742B98600BC75E7 /* AuthorizationType.swift in Sources */,
+				54F4296B2729AAFF00A09C4F /* HTTPStatusCode.swift in Sources */,
+				54EB2FC2273D29B2006E8B84 /* TweetView.swift in Sources */,
+				54EB2FBB273D241B006E8B84 /* TwitterService.swift in Sources */,
+				548C8C1F274BA16D000C4978 /* Media.swift in Sources */,
+				549CC144279425CB004CF624 /* VideoInfo.swift in Sources */,
+				54B2200A274FD16100AF521E /* TweetMediaView.swift in Sources */,
+				54F1B9C72743D7FB002AD2FA /* TweetDetailView.swift in Sources */,
+				5430F36C2735549200C20449 /* Constants.swift in Sources */,
+				549CC148279425F9004CF624 /* MediaType.swift in Sources */,
+				54BEC3B0275651B400256AB5 /* UserView.swift in Sources */,
+				54F429592729633500A09C4F /* DIContainer.swift in Sources */,
+				54AD7168272836CA006B8CA8 /* ContentView.swift in Sources */,
+				54AD716C272836CA006B8CA8 /* ComplicationController.swift in Sources */,
+				54F4296D2729ABA500A09C4F /* HTTPMethod.swift in Sources */,
+				54BEC3B22756522900256AB5 /* ProfileStore.swift in Sources */,
+				54EB2FC4273D45A6006E8B84 /* ProfileView.swift in Sources */,
+				54EB2FB6273AACDF006E8B84 /* RequestAuthTokenResponse.swift in Sources */,
+				54EB2FB8273BEC1E006E8B84 /* TwitterRouter.swift in Sources */,
+				54EB2FB2273A98AD006E8B84 /* KeychainManager.swift in Sources */,
+				54EB2FC8273D467D006E8B84 /* LoggedInView.swift in Sources */,
+				5430F37127355D1800C20449 /* String+Convenience.swift in Sources */,
+				5444F0A82747F99B00388035 /* TweetDetailStore.swift in Sources */,
+				54F4295B2729634100A09C4F /* Injected.swift in Sources */,
+				54F429712729B00700A09C4F /* HTTPHeader.swift in Sources */,
+				542E5D292742B93D00BC75E7 /* AccessTokenAuthorizable.swift in Sources */,
+				5417C9C6279F248B006518B5 /* FailureView.swift in Sources */,
+				54A8D0FD2746569B00CB3D65 /* LoggedOutView.swift in Sources */,
+				54F429632729641700A09C4F /* APIError.swift in Sources */,
+				548C8C1D274BA147000C4978 /* User.swift in Sources */,
+				548C8C21274BD0EB000C4978 /* ExtendendEntities.swift in Sources */,
+				54D4492727C8E165005D43D4 /* ExpandedTweetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54AD715A272836C7006B8CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AD7156272836C7006B8CA8 /* Tweetr Watch WatchKit App */;
+			targetProxy = 54AD7159272836C7006B8CA8 /* PBXContainerItemProxy */;
+		};
+		54AD7165272836CA006B8CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AD7161272836CA006B8CA8 /* Tweetr Watch WatchKit Extension */;
+			targetProxy = 54AD7164272836CA006B8CA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		54AD7173272836CB006B8CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54AD7174272836CB006B8CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54AD7176272836CB006B8CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Tweetr Watch WatchKit Extension/Tweetr Watch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tweetr Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7U35BCQZNX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tweetr Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tweetr Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.tweetr.Tweetr-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		54AD7177272836CB006B8CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Tweetr Watch WatchKit Extension/Tweetr Watch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tweetr Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7U35BCQZNX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tweetr Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tweetr Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.tweetr.Tweetr-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		54AD717A272836CB006B8CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U35BCQZNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Tweetr_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tweetr Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.tweetr.Tweetr-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		54AD717B272836CB006B8CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U35BCQZNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Tweetr_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tweetr Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.tweetr.Tweetr-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		54AD717E272836CB006B8CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U35BCQZNX;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.tweetr.Tweetr-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54AD717F272836CB006B8CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U35BCQZNX;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.tweetr.Tweetr-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54AD7150272836C7006B8CA8 /* Build configuration list for PBXProject "Tweetr Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AD7173272836CB006B8CA8 /* Debug */,
+				54AD7174272836CB006B8CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AD7175272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AD7176272836CB006B8CA8 /* Debug */,
+				54AD7177272836CB006B8CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AD7179272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AD717A272836CB006B8CA8 /* Debug */,
+				54AD717B272836CB006B8CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AD717D272836CB006B8CA8 /* Build configuration list for PBXNativeTarget "Tweetr Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AD717E272836CB006B8CA8 /* Debug */,
+				54AD717F272836CB006B8CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54AD714D272836C7006B8CA8 /* Project object */;
+}
